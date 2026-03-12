@@ -2,7 +2,7 @@
 
 > 从零开始，8 个步骤学会用 AI 创作视频
 
-**在线访问:** [GitHub Pages 链接] (待部署)  
+**在线访问:** https://aiopenclaw2026.github.io/ai-video-tutorial/  
 **版本:** 1.0.0  
 **最后更新:** 2026-03-12
 
