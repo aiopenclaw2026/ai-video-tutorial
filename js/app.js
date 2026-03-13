@@ -50,13 +50,17 @@ class TutorialApp {
     sidebar.innerHTML = tutorialData.steps.map((step, index) => {
       const isCompleted = this.completedSteps.includes(step.id);
       const isActive = index === this.currentStep;
+      const isBonus = step.isBonus || false;
       
       return `
-        <div class="step-card ${isCompleted ? 'completed' : ''} ${isActive ? 'active' : ''}" 
+        <div class="step-card ${isCompleted ? 'completed' : ''} ${isActive ? 'active' : ''} ${isBonus ? 'bonus' : ''}" 
              data-step="${index}">
           <span class="step-icon">${isCompleted ? '☑' : (isActive ? '▶' : '○')}</span>
           <div class="step-info">
-            <div class="step-number">步骤 ${step.id}</div>
+            <div class="step-number">
+              ${isBonus ? '附录' : '步骤'} ${step.id}
+              ${isBonus ? '<span class="step-bonus-badge">Bonus</span>' : ''}
+            </div>
             <div class="step-title">${step.title}</div>
             <div class="step-duration">⏱️ ${step.duration}</div>
           </div>
@@ -69,13 +73,14 @@ class TutorialApp {
   renderContent() {
     const mainContent = document.querySelector('.main-content');
     const step = tutorialData.steps[this.currentStep];
+    const isBonus = step.isBonus || false;
     
     mainContent.innerHTML = `
       <div class="content-card">
         <div class="content-header">
           <h1 class="content-title">
             <span>${step.icon}</span>
-            <span>步骤 ${step.id}: ${step.title}</span>
+            <span>${isBonus ? '附录' : '步骤'} ${step.id}: ${step.title}${isBonus ? ' <span class="step-bonus-badge">Bonus</span>' : ''}</span>
           </h1>
         </div>
         <div class="content-body">

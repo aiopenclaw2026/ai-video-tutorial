@@ -52,7 +52,7 @@ const tutorialData = {
       `,
       resources: [
         { name: "可灵 AI", url: "https://klingai.com" },
-        { name: "即梦 AI", url: "https://jimeng.ai" },
+        { name: "即梦 AI", url: "https://jimeng.jianying.com" },
         { name: "Runway", url: "https://runwayml.com" },
         { name: "Midjourney", url: "https://midjourney.com" }
       ]
@@ -484,6 +484,243 @@ const tutorialData = {
         { name: "抖音创作者中心", url: "https://creator.douyin.com" },
         { name: "B 站创作中心", url: "https://member.bilibili.com" },
         { name: "YouTube Studio", url: "https://studio.youtube.com" }
+      ]
+    },
+    
+    {
+      id: 9,
+      title: "工具大全",
+      icon: "🛠️",
+      duration: "参考资料",
+      isBonus: true,
+      content: `
+        <p>这是 AI 视频创作工具的完整清单，包括动画效果实现工具和专业制作流程。</p>
+        
+        <h3>9.1 动画效果工具（科普视频必备）</h3>
+        
+        <h4>🎬 专业动画软件（电影级效果）</h4>
+        <table class="tools-table">
+          <tr>
+            <th>软件</th>
+            <th>用途</th>
+            <th>难度</th>
+            <th>价格</th>
+          </tr>
+          <tr>
+            <td><strong>After Effects</strong></td>
+            <td>动态图形、特效</td>
+            <td>⭐⭐⭐⭐</td>
+            <td>¥300/月</td>
+          </tr>
+          <tr>
+            <td><strong>Cinema 4D</strong></td>
+            <td>3D 动画</td>
+            <td>⭐⭐⭐⭐⭐</td>
+            <td>¥800/月</td>
+          </tr>
+          <tr>
+            <td><strong>Blender</strong></td>
+            <td>3D 动画（免费）</td>
+            <td>⭐⭐⭐⭐⭐</td>
+            <td>免费</td>
+          </tr>
+          <tr>
+            <td><strong>Maya</strong></td>
+            <td>专业 3D 动画</td>
+            <td>⭐⭐⭐⭐⭐</td>
+            <td>¥1000+/月</td>
+          </tr>
+        </table>
+        
+        <h4>🎨 入门友好工具（快速上手）</h4>
+        <table class="tools-table">
+          <tr>
+            <th>软件</th>
+            <th>用途</th>
+            <th>难度</th>
+            <th>价格</th>
+          </tr>
+          <tr>
+            <td><strong>Canva</strong></td>
+            <td>简单动画</td>
+            <td>⭐⭐</td>
+            <td>免费/¥50/月</td>
+          </tr>
+          <tr>
+            <td><strong>万彩动画大师</strong></td>
+            <td>2D 动画</td>
+            <td>⭐⭐</td>
+            <td>¥200/年</td>
+          </tr>
+          <tr>
+            <td><strong>Vyond</strong></td>
+            <td>卡通动画</td>
+            <td>⭐⭐</td>
+            <td>$50/月</td>
+          </tr>
+          <tr>
+            <td><strong>Animaker</strong></td>
+            <td>在线动画</td>
+            <td>⭐⭐</td>
+            <td>免费/$12/月</td>
+          </tr>
+        </table>
+        
+        <h4>📹 屏幕录制 + 标注（技术类必备）</h4>
+        <ul>
+          <li><strong>OBS Studio：</strong>录屏直播，免费开源</li>
+          <li><strong>Camtasia：</strong>录屏 + 剪辑，¥2000 永久</li>
+          <li><strong>ScreenFlow：</strong>Mac 录屏，¥1000 永久</li>
+        </ul>
+        
+        <h4>✂️ 剪辑软件（后期必备）</h4>
+        <ul>
+          <li><strong>Premiere Pro：</strong>专业剪辑，¥300/月</li>
+          <li><strong>Final Cut Pro：</strong>Mac 专用，¥2000 永久</li>
+          <li><strong>DaVinci Resolve：</strong>调色强大，免费/¥2000</li>
+          <li><strong>剪映专业版：</strong>新手友好，免费</li>
+        </ul>
+        
+        <div class="tip">
+          <strong>💡 热门科普博主工具揭秘</strong>
+          <ul>
+            <li><strong>回形针 PaperClip：</strong>AE + C4D + PR + AI</li>
+            <li><strong>李永乐老师：</strong>实拍 + 手写板 + AE 公式动画</li>
+            <li><strong>影视飓风：</strong>AE + C4D + 达芬奇调色</li>
+            <li><strong>3Blue1Brown：</strong>自研 Manim 库（Python 开源）</li>
+          </ul>
+        </div>
+        
+        <h3>9.2 常见动画效果实现</h3>
+        
+        <h4>文字动画</h4>
+        <p><strong>工具：</strong>After Effects<br>
+        <strong>效果：</strong>打字机、弹入、模糊出现<br>
+        <strong>教程：</strong>B 站搜索"AE 文字动画教程"</p>
+        
+        <h4>图表动画</h4>
+        <p><strong>工具：</strong>After Effects + Excel<br>
+        <strong>流程：</strong>Excel 制作数据 → 导入 AE → 添加动画关键帧</p>
+        
+        <h4>地图动画</h4>
+        <p><strong>工具：</strong>GeoLayers 3（AE 插件）、Google Earth Studio（免费）<br>
+        <strong>效果：</strong>路径动画、区域高亮</p>
+        
+        <h4>3D 模型展示</h4>
+        <p><strong>工具：</strong>Blender / Cinema 4D<br>
+        <strong>流程：</strong>建模/下载模型 → 打光 + 材质 → 渲染动画</p>
+        
+        <h4>粒子效果</h4>
+        <p><strong>工具：</strong>After Effects + Trapcode Particular<br>
+        <strong>效果：</strong>数据流、星空、爆炸</p>
+        
+        <h3>9.3 完整制作流程</h3>
+        
+        <div class="workflow">
+          <div class="workflow-step">
+            <strong>1. 选题策划</strong>
+            <span>1-2 天</span>
+            <p>确定主题、收集资料、写脚本</p>
+          </div>
+          <div class="workflow-step">
+            <strong>2. 分镜设计</strong>
+            <span>1 天</span>
+            <p>画草图、规划镜头、确定风格</p>
+          </div>
+          <div class="workflow-step">
+            <strong>3. 配音录制</strong>
+            <span>半天</span>
+            <p>写旁白稿、录音/TTS、音频处理</p>
+          </div>
+          <div class="workflow-step">
+            <strong>4. 动画制作</strong>
+            <span>3-7 天</span>
+            <p>素材绘制、AE 动画、3D 渲染</p>
+          </div>
+          <div class="workflow-step">
+            <strong>5. 剪辑合成</strong>
+            <span>1-2 天</span>
+            <p>导入素材、配音对口型、加 BGM/音效、调色</p>
+          </div>
+          <div class="workflow-step">
+            <strong>6. 导出发布</strong>
+            <span>半天</span>
+            <p>渲染输出、封面制作、上传平台</p>
+          </div>
+        </div>
+        
+        <h3>9.4 新手入门推荐方案</h3>
+        
+        <h4>💰 预算有限（免费方案）</h4>
+        <ul>
+          <li><strong>工具：</strong>剪映 + Blender + OBS + Audacity</li>
+          <li><strong>成本：</strong>0 元</li>
+          <li><strong>学习曲线：</strong>中等</li>
+        </ul>
+        
+        <h4>💰💰 进阶方案（专业入门）</h4>
+        <ul>
+          <li><strong>工具：</strong>AE + PR + PS + 万彩动画大师</li>
+          <li><strong>成本：</strong>约¥500/月</li>
+          <li><strong>学习曲线：</strong>较陡</li>
+        </ul>
+        
+        <h4>💰💰💰 专业方案（工作室级）</h4>
+        <ul>
+          <li><strong>工具：</strong>AE + C4D + PR + 达芬奇 + 专业设备</li>
+          <li><strong>成本：</strong>约¥2000/月 + 硬件¥10000+</li>
+          <li><strong>学习曲线：</strong>陡峭</li>
+        </ul>
+        
+        <h3>9.5 学习资源推荐</h3>
+        
+        <h4>📚 教程平台</h4>
+        <ul>
+          <li><strong>B 站：</strong>免费教程最多（推荐 oeasy、doyoudo）</li>
+          <li><strong>YouTube：</strong>英文教程丰富</li>
+          <li><strong>慕课网：</strong>系统课程，¥100-500</li>
+          <li><strong>Udemy：</strong>英文系统课，$10-50</li>
+        </ul>
+        
+        <h4>📺 推荐 UP 主</h4>
+        <ul>
+          <li><strong>oeasy：</strong>全能教程（AE/PR/PS）</li>
+          <li><strong>doyoudo：</strong>创意软件教学</li>
+          <li><strong>影视飓风：</strong>专业视频制作</li>
+          <li><strong>视频大拍：</strong>AE 特效教程</li>
+        </ul>
+        
+        <h3>9.6 AI 辅助工具（2026 新趋势）</h3>
+        
+        <h4>🤖 AI 生成素材</h4>
+        <ul>
+          <li><strong>Midjourney：</strong>生成图片，$10/月</li>
+          <li><strong>Runway ML：</strong>AI 视频，$15/月</li>
+          <li><strong>ElevenLabs：</strong>AI 配音，$5/月</li>
+        </ul>
+        
+        <h4>🤖 AI 辅助剪辑</h4>
+        <ul>
+          <li><strong>剪映 AI：</strong>自动字幕、智能剪辑</li>
+          <li><strong>Descript：</strong>AI 配音修改</li>
+          <li><strong>Pictory：</strong>文字转视频</li>
+        </ul>
+        
+        <div class="tip">
+          <strong>🎯 关键建议</strong>
+          <ul>
+            <li><strong>内容 > 效果：</strong>好脚本比炫酷动画重要</li>
+            <li><strong>坚持更新：</strong>每周 1 个视频，持续改进</li>
+            <li><strong>建立素材库：</strong>积累模板、音乐、音效</li>
+            <li><strong>先完成再完美：</strong>从简单开始，逐步提升</li>
+          </ul>
+        </div>
+      `,
+      resources: [
+        { name: "Blender 官网", url: "https://www.blender.org" },
+        { name: "After Effects 教程", url: "https://helpx.adobe.com/after-effects" },
+        { name: "oeasy 教程", url: "http://oeasy.org" },
+        { name: "影视飓风", url: "https://space.bilibili.com/336842228" }
       ]
     }
   ]
